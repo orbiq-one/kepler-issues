@@ -1,0 +1,65 @@
+name: Feature Request
+description: Suggest a new feature or improvement for Kepler.
+labels: ['enhancement']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting an improvement! Please fill out the form below.
+        Before submitting, **search existing issues** to see if this has already been requested.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Description
+      description: Please describe your feature or improvement request in detail.
+      placeholder: "e.g. I'd like to have the option to search webpages through Kepler."
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Problem
+      description: If there is any problem, that this feature or improvement would fix, please explain the problem here in detail.
+      placeholder: "e.g. It's an extra step to first open the browser and then search for a webpage, instead of having the option to do so directly in the launcher."
+    validations:
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: Have you found any workarounds or alternative approaches? Why don't they fully solve the problem?
+    validations:
+      required: false
+
+  - type: dropdown
+    id: impact
+    attributes:
+      label: Impact
+      description: How much would this feature improve your use of Kepler?
+      options:
+        - 'Nice to have (small quality-of-life improvement)'
+        - 'Helpful (would meaningfully improve my workflow)'
+        - 'Important (I work around its absence regularly)'
+        - 'Blocking (I cannot use Kepler effectively without this)'
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional Context
+      description: Mockups, examples from other tools, related issues, or any other context that supports this request.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: I have searched existing issues and this has not already been requested.
+          required: true
+        - label: This request describes a single feature, not multiple unrelated improvements.
+          required: true
