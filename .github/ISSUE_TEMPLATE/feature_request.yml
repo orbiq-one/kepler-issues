@@ -9,21 +9,22 @@ body:
         Before submitting, **search existing issues** to see if this has already been requested.
 
   - type: textarea
-    id: problem
+    id: description
     attributes:
       label: Description
-      description: Please describe your feature or improvement request in detail.
-      placeholder: "e.g. I'd like to have the option to search webpages through Kepler."
+      description: Describe the feature or improvement you'd like to see, in as much detail as possible.
+      placeholder: "e.g. I'd like to be able to search the web directly from Kepler."
     validations:
       required: true
 
   - type: textarea
-    id: solution
+    id: problem
     attributes:
       label: Problem
-      description: If there is any problem, that this feature or improvement would fix, please explain the problem here in detail.
-      placeholder: "e.g. It's an extra step to first open the browser and then search for a webpage, instead of having the option to do so directly in the launcher."
+      description: If this request is motivated by a specific problem or friction point, describe it here.
+      placeholder: "e.g. Right now I have to switch to the browser just to do a quick search, which breaks my flow."
     validations:
+      required: false
 
   - type: textarea
     id: alternatives

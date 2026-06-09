@@ -35,7 +35,7 @@ body:
     attributes:
       label: Expected Behavior
       description: What should have happened?
-      placeholder: e.g. "Clicking save should actually save settings.""
+      placeholder: e.g. "Clicking Save should persist the settings."
     validations:
       required: true
 
